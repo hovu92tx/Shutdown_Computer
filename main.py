@@ -12,7 +12,7 @@ def run(command):
         if h == x.hour and m == x.minute and s == x.second:
             os.system(command)
 
-vbv
+
 def main():
     print("What do you want to do?", "1. Shutdown", "2. Restart", "3. Exit")
     command = input("You chose: ")
