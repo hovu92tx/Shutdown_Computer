@@ -7,6 +7,8 @@ def run(command):
     h = int(input("Hour: (0-24)"))
     m = int(input("Minute: (0-60)"))
     s = int(input("Second: (0-60)"))
+    timeStr = "Shutdown/Reset time is set at: {}:{}:{}"
+    print(timeStr.format(h, m, s))
     while True:
         x = datetime.datetime.now()
         if h == x.hour and m == x.minute and s == x.second:
